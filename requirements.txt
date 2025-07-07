@@ -1,0 +1,6 @@
+python-telegram-bot==13.15
+schedule
+flask
+requests
+beautifulsoup4
+Pillow

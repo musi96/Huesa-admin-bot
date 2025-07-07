@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: huesa-admin-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python scheduler.py"

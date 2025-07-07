@@ -8,12 +8,13 @@ keep_alive()
 
 print("🤖 Bot is running...")
 
-schedule.every().day.at("05:00").do(post_news)
-schedule.every().day.at("07:00").do(post_scholarships)
-schedule.every().day.at("09:00").do(post_tip)
-schedule.every().day.at("11:00").do(post_note)
-schedule.every().day.at("13:00").do(post_bio)
-schedule.every().day.at("15:00").do(post_image)
+# Scheduled UTC times (Ethiopia UTC+3)
+schedule.every().day.at("05:00").do(post_news)         # 8 AM Ethiopia
+schedule.every().day.at("07:00").do(post_scholarships) # 10 AM
+schedule.every().day.at("09:50").do(post_tip)          # 12 PM
+schedule.every().day.at("11:00").do(post_note)         # 2 PM
+schedule.every().day.at("14:00").do(post_bio)          # 4 PM
+schedule.every().day.at("17:00").do(post_image)        # 6 PM
 
 while True:
     print(f"⏰ {datetime.utcnow()} - checking...")
